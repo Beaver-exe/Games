@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px - 50px);
+    width: 100%;
+}
+
+
+.heading {
+    font-size: 2rem;
+    color: red;
+}
+
+.winsLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.counter {
+    display: flex;
+}
+
+.resetButton {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.resetButton {
+    display: flex;
+}

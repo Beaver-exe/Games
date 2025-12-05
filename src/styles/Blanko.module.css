@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;      /* stack boxes + button vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px - 50px);
+    width: 100%;
+}
+
+.boxRow {
+    display: flex;               /* boxes stay in a row */
+    justify-content: center;
+    align-items: center;
+}
+
+.squareContainer {
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answerInput {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.resetContainer {
+    margin-top: 16px;            /* space under boxes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resetButton {
+    cursor: pointer;
+    padding: 5px;
+}
+

@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px - 50px);
+    width: 100%;
+}
+
+.gameName {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.instructions {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    width: 500px;
+    height: 500px;
+}
+
+.lightOn {
+    background-color: rgb(21, 132, 197);
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.lightOff {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.resetButton {
+    height: 40px;
+    padding: 20px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.popupOverlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popupBox {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+}

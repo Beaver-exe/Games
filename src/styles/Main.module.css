@@ -1,0 +1,39 @@
+.container { 
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.navBar {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: rgb(21, 132, 197);
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.content {
+    padding-top: 40px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    margin-left: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.link:not(:last-child)::after {
+    content: "/";
+    margin-left: 20px;
+    color: white;
+}

@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;      /* stack boxes + button vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px - 50px);
+    width: 100%;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+}
+
+.cellImage {
+    border: 1px solid #333;
+}
+
+.buttonContainer {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.solveButton,
+.resetButton {
+    height: 30px;
+    width: 60px;
+}
+
+.disabledSolvedButton {
+    height: 30px;
+    width: 60px;
+    background-color: #333;
+}

@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 80px - 50px);
+    width: 100%;
+}
+
+.messageLine {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.gameName {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.instructions {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.word {
+    font-weight: 100;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.input {
+    height: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid  rgb(21, 132, 197);
+}
+
+.reset {
+    margin: 0;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background: none;
+    border-radius: 10px;
+}
+
+.reset:hover {
+    background-color: rgb(21, 132, 197);
+    color: white;
+}
+
+.timer {
+    font-size: 1.4rem;
+}
+
+.popupOverlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popupBox {
+    border: 1px solid black;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+}
