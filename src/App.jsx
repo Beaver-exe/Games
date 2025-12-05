@@ -6,6 +6,7 @@ import Reflex from "./pages/Reflex"
 import TTT from "./pages/TTT"
 import Blanko from './pages/Blanko'
 import Slido from './pages/Slido'
+import Memory from "./pages/Memory"  
 import './App.css'
 
 
@@ -24,6 +25,7 @@ function App() {
         <p className={styles.link} onClick={() => navigate("/lightson")}>Lights On</p>
         <p className={styles.link} onClick={() => navigate("/Reflex")}>Reflex</p>
         <p className={styles.link} onClick={() => navigate("/tictactoe")}>TicTacToe</p>
+        <p className={styles.link} onClick={() => navigate("/memory")}>Memory</p>
       </div>
 
       <div className={styles.content}>
@@ -34,6 +36,7 @@ function App() {
           <Route path="/lightson" element={<LightsOn />} />
           <Route path="/blanko" element={<Blanko />} />
           <Route path="/slido" element={<Slido />} />
+          <Route path="/memory" element={<Memory />} />
         </Routes>
       </div>
     </div>

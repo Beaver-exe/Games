@@ -1,0 +1,35 @@
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    width: 400px;
+    height: 400px;
+}
+
+.card {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    border: 1px solid black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.cardImage {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: lightgray;
+}
