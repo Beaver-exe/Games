@@ -36,6 +36,16 @@ export default function Memory() {
         setCards(shuffledCards)
     }
 
+    const checkState = (newCards) => {
+        const allRevealed = newCards.every(card => card.revealed)
+        if (allRevealed) {
+            setTimeout(() => {
+                alert("Congratulations! You've matched all the cards!")
+                startGame()
+            }, 500)
+        }
+    }
+
     const checkPair = (newCards) => {
         if (firstCard !== null && secondCard !== null) {
             if (newCards[firstCard].image === newCards[secondCard].image) {
@@ -66,6 +76,7 @@ export default function Memory() {
         }
 
         checkPair(newCards)
+        checkState(newCards)
     }
 
     return (
