@@ -1,14 +1,13 @@
 .container {
     display: flex;
-    flex-direction: column;      /* stack boxes + button vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 80px - 50px);
-    width: 100%;
 }
 
 .boxRow {
-    display: flex;               /* boxes stay in a row */
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -17,10 +16,10 @@
     border: 2px solid black;
     height: 100px;
     width: 100px;
-    margin-left: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .answerInput {
@@ -31,7 +30,7 @@
 }
 
 .resetContainer {
-    margin-top: 16px;            /* space under boxes */
+    margin-top: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
