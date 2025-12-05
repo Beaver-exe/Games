@@ -12,6 +12,8 @@ import image8 from "../assets/8.png"
 
 export default function Memory() {
     const [cards, setCards] = useState([])
+    const [firstCard, setFirstCard] = useState(null)
+    const [secondCard, setSecondCard] = useState(null)
 
     const images = [image1, image2, image3, image4, image5, image6, image7, image8]
 
@@ -26,12 +28,44 @@ export default function Memory() {
             while (j < 2) {
                 const index = Math.floor(Math.random() * 16)
                 if (!shuffledCards[index]) {
-                    shuffledCards[index] = {image: images[i], revealed: true};
+                    shuffledCards[index] = {image: images[i], revealed: false};
                     j++;
                 }
             }
         }
         setCards(shuffledCards)
+    }
+
+    const checkPair = (newCards) => {
+        if (firstCard !== null && secondCard !== null) {
+            if (newCards[firstCard].image === newCards[secondCard].image) {
+                setFirstCard(null)
+                setSecondCard(null)
+            } else {
+                setTimeout(() => {
+                    newCards[firstCard].revealed = false
+                    newCards[secondCard].revealed = false
+                    setCards(newCards)
+                    setFirstCard(null)
+                    setSecondCard(null)
+                }, 1000)
+            }
+        }
+    }
+
+    const handleCardClick = (index) => {
+        const newCards = [...cards]
+        if (firstCard === null) {
+            newCards[index].revealed = true
+            setCards(newCards)
+            setFirstCard(index)
+        } else if (secondCard === null && index !== firstCard) {
+            newCards[index].revealed = true
+            setCards(newCards)
+            setSecondCard(index)
+        }
+
+        checkPair(newCards)
     }
 
     return (
@@ -48,9 +82,7 @@ export default function Memory() {
                             <img src={card.image} alt="card" className={styles.cardImage} />
                         </div>
                     ) : (
-                        <div key={index} className={styles.card}>
-                            <div className={styles.cardBack}></div>
-                        </div>
+                        <div key={index} className={styles.card} onClick={() => handleCardClick(index)} ></div>
                     )
                 ))}
             </div>
