@@ -1,8 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" fill="none">
-  <ellipse cx="40" cy="50" rx="24" ry="18" fill="#FF6B00"/>
-  <circle cx="30" cy="30" r="18" fill="#FF6B00"/>
-  <ellipse cx="15" cy="32" rx="9" ry="4.5" fill="#FF6B00"/>
-  <circle cx="28" cy="25" r="3" fill="white"/>
-  <path d="M35 45c6-3 12-3 18 0" stroke="white" stroke-width="2" fill="none" opacity="0.7"/>
-  <path d="M20 42h16M20 48h16" stroke="white" stroke-width="2" opacity="0.8"/>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 200 60"
+  fill="none"
+>
+  <!-- Duck body -->
+  <ellipse cx="40" cy="50" rx="24" ry="18" fill="#FF6B00" />
+
+  <!-- Duck head -->
+  <circle cx="30" cy="30" r="18" fill="#FF6B00" />
+
+  <!-- Duck bill -->
+  <ellipse cx="15" cy="32" rx="9" ry="4.5" fill="#FF6B00" />
+
+  <!-- Duck eye -->
+  <circle cx="28" cy="25" r="3" fill="white" />
+
+  <!-- Duck wing detail -->
+  <path
+    d="M35 45c6-3 12-3 18 0"
+    stroke="white"
+    stroke-width="2"
+    fill="none"
+    opacity="0.7"
+  />
+
+  <!-- Horizontal lines on duck body -->
+  <path
+    d="M20 42h16M20 48h16"
+    stroke="white"
+    stroke-width="2"
+    opacity="0.8"
+  />
+
+  <!-- Dukbill text -->
+  <text
+    x="80"
+    y="55"
+    font-size="36"
+    font-weight="700"
+    fill="#FF6B00"
+    font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+  >
+    Dukbill
+  </text>
 </svg>
